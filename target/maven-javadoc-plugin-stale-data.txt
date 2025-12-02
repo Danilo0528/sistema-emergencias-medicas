@@ -1,0 +1,51 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-private
+--release
+17
+-sourcepath
+'/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java:/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2025 <a href="https://www.iudigital.edu.co">IUDigital de Antioquia</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Sistema de Gestión de Emergencias Médicas 1.0.0 API'
+-nohelp
+-use
+-version
+-windowtitle
+'Sistema de Gestión de Emergencias Médicas 1.0.0 API'
+com.emergencias.modelos
+com.emergencias.gestores
+com.emergencias.hilos
+com.emergencias
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java = 1764555106253
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/generated-sources/annotations = 1764557304780
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/allpackages-index.html = 1764557396945
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/search.html = 1764557398745
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/tag-search-index.js = 1764557396965
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/overview-summary.html = 1764557398865
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/module-search-index.js = 1764557396949
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/search.js = 1764557399065
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/element-list = 1764557394809
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/type-search-index.js = 1764557396949
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/member-search-index.js = 1764557396961
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/overview-tree.html = 1764557396637
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/index-all.html = 1764557398673
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/allclasses-index.html = 1764557396933
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/constant-values.html = 1764557395413
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/copy.svg = 1764557399005
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/link.svg = 1764557399017
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/script.js = 1764557398953
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/search-page.js = 1764557399069
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/stylesheet.css = 1764557398945
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/package-search-index.js = 1764557396949
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/target/apidocs/index.html = 1764557396665

@@ -1,0 +1,10 @@
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/gestores/GestorEmergencias.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/modelos/Emergencia.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/modelos/Ambulancia.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/hilos/MonitorTiempoReal.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/Main.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/modelos/Prioridad.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/gestores/GestorRecursos.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/hilos/OperadorLlamadas.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/modelos/MedicoEmergencia.java
+/home/kirito/NetBeansProjects/sistema-emergencias-medicas/src/main/java/com/emergencias/hilos/Despachador.java
