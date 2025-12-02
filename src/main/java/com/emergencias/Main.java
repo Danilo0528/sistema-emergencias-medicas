@@ -17,7 +17,7 @@ import java.util.concurrent.*;
 public class Main {
     private static final int NUM_OPERADORES = 3;
     private static final int NUM_DESPACHADORES = 4;
-    private static final int DURACION_SIMULACION_SEGUNDOS = 60; // 1 minuto
+    private static final int DURACION_SIMULACION_SEGUNDOS = 120; // 2 minutos
     
     public static void main(String[] args) {
         System.out.println("╔═══════════════════════════════════════════════════════════════════════════╗");

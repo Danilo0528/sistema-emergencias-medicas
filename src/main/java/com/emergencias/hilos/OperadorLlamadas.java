@@ -61,8 +61,8 @@ public class OperadorLlamadas implements Runnable {
         
         try {
             while (activo && !Thread.currentThread().isInterrupted()) {
-                // Simular tiempo entre llamadas (2-8 segundos)
-                TimeUnit.SECONDS.sleep(2 + random.nextInt(7));
+                // Simular tiempo entre llamadas (0.5-3 segundos) para más emergencias
+                TimeUnit.MILLISECONDS.sleep(500 + random.nextInt(2500));
                 
                 // Generar emergencia aleatoria
                 Emergencia emergencia = generarEmergenciaAleatoria();
