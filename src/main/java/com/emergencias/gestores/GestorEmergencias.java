@@ -119,7 +119,7 @@ public class GestorEmergencias {
             java.time.LocalDateTime.now()
         ).toMinutes();
         
-        System.out.println("✅ COMPLETADA: EMG-" + String.format("%03d", emergencia.getId()) + 
+        System.out.println(" -COMPLETADA: EMG-" + String.format("%03d", emergencia.getId()) + 
                          " (Tiempo: " + tiempoRespuesta + " mins)");
         
         for (EmergenciaListener listener : listeners) {
