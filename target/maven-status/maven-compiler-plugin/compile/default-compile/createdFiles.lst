@@ -1,9 +1,15 @@
 com/emergencias/modelos/MedicoEmergencia.class
+com/emergencias/modelos/Ambulancia$TipoAmbulancia.class
+com/emergencias/modelos/Ambulancia.class
 com/emergencias/hilos/Despachador$1.class
 com/emergencias/gestores/GestorRecursos.class
 com/emergencias/gestores/GestorEmergencias.class
+com/emergencias/modelos/Prioridad.class
+com/emergencias/modelos/Emergencia$EstadoEmergencia.class
+com/emergencias/modelos/Emergencia.class
 com/emergencias/hilos/MonitorTiempoReal.class
 com/emergencias/Main.class
 com/emergencias/hilos/Despachador.class
 com/emergencias/hilos/OperadorLlamadas.class
 com/emergencias/modelos/MedicoEmergencia$Especialidad.class
+com/emergencias/gestores/GestorEmergencias$EmergenciaListener.class
