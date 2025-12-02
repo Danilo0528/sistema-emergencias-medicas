@@ -340,7 +340,7 @@ Solución: Uso de variables atómicas y estructuras thread-safe
 
 Proyecto académico desarrollado para el curso de Programación Concurrente.
 
-IUDigital de Antioquia - 2024
+IUDigital de Antioquia - 2025
 
 ---
 
