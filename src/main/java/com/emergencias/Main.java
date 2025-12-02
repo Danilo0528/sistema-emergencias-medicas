@@ -42,7 +42,7 @@ public class Main {
         GestorEmergencias gestorEmergencias = GestorEmergencias.getInstancia();
         GestorRecursos gestorRecursos = GestorRecursos.getInstancia();
         
-        System.out.println("\n🚀 Iniciando Sistema de Emergencias Médicas...\n");
+        System.out.println("\nIniciando Sistema de Emergencias Médicas...\n");
         
         // ExecutorService para manejo eficiente de hilos
         ExecutorService executorOperadores = Executors.newFixedThreadPool(NUM_OPERADORES);
@@ -69,12 +69,12 @@ public class Main {
         MonitorTiempoReal monitor = new MonitorTiempoReal(10); // Actualiza cada 10 segundos
         executorMonitor.submit(monitor);
         
-        System.out.println("✓ Sistema completamente inicializado\n");
-        System.out.println("  • " + NUM_OPERADORES + " operadores activos");
-        System.out.println("  • " + NUM_DESPACHADORES + " despachadores activos");
-        System.out.println("  • Monitor en tiempo real activo");
-        System.out.println("  • " + gestorRecursos.getAmbulanciasTotales() + " ambulancias disponibles");
-        System.out.println("  • " + gestorRecursos.getMedicosTotales() + " médicos disponibles\n");
+        System.out.println("Sistema completamente inicializado\n");
+        System.out.println("  - " + NUM_OPERADORES + " operadores activos");
+        System.out.println("  - " + NUM_DESPACHADORES + " despachadores activos");
+        System.out.println("  - Monitor en tiempo real activo");
+        System.out.println("  - " + gestorRecursos.getAmbulanciasTotales() + " ambulancias disponibles");
+        System.out.println("  - " + gestorRecursos.getMedicosTotales() + " médicos disponibles\n");
         
         // Modo de ejecución
         ejecutarModoAutomatico(operadores, despachadores, monitor, 
@@ -91,14 +91,14 @@ public class Main {
                                        ExecutorService execDespachadores,
                                        ExecutorService execMonitor) {
         
-        System.out.println("🔄 Sistema ejecutándose en modo AUTOMÁTICO");
-        System.out.println("⏱  Duración: " + DURACION_SIMULACION_SEGUNDOS + " segundos");
-        System.out.println("⏸  Presiona Ctrl+C para detener anticipadamente\n");
+        System.out.println("Sistema ejecutandose en modo automatico");
+        System.out.println("Duración: " + DURACION_SIMULACION_SEGUNDOS + " segundos");
+        System.out.println("Presiona Ctrl+C para detener anticipadamente\n");
         System.out.println("=".repeat(80) + "\n");
         
         // Configurar shutdown hook para detención ordenada
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            System.out.println("\n\n🛑 Señal de detención recibida...");
+            System.out.println("\n\nSeñal de detención recibida...");
             detenerSistema(operadores, despachadores, monitor, 
                           execOperadores, execDespachadores, execMonitor);
         }));
@@ -107,12 +107,12 @@ public class Main {
             // Ejecutar por tiempo definido
             TimeUnit.SECONDS.sleep(DURACION_SIMULACION_SEGUNDOS);
             
-            System.out.println("\n\n⏰ Tiempo de simulación completado");
+            System.out.println("\n\nTiempo de simulación completado");
             detenerSistema(operadores, despachadores, monitor, 
                           execOperadores, execDespachadores, execMonitor);
             
         } catch (InterruptedException e) {
-            System.out.println("\n⚠ Simulación interrumpida");
+            System.out.println("\nSimulación interrumpida");
             detenerSistema(operadores, despachadores, monitor, 
                           execOperadores, execDespachadores, execMonitor);
             Thread.currentThread().interrupt();
@@ -129,10 +129,10 @@ public class Main {
                                ExecutorService execDespachadores,
                                ExecutorService execMonitor) {
         
-        System.out.println("\n🔄 Iniciando apagado ordenado del sistema...\n");
+        System.out.println("\nIniciando apagado ordenado del sistema...\n");
         
         // Paso 1: Detener operadores (no más llamadas nuevas)
-        System.out.println("1️⃣ Deteniendo operadores...");
+        System.out.println("Deteniendo operadores...");
         for (OperadorLlamadas op : operadores) {
             op.detener();
         }
@@ -148,7 +148,7 @@ public class Main {
         }
         
         // Paso 2: Dar tiempo a despachadores para procesar cola restante
-        System.out.println("2️⃣ Procesando emergencias restantes...");
+        System.out.println("Procesando emergencias restantes...");
         try {
             TimeUnit.SECONDS.sleep(10); // Tiempo para procesar cola
         } catch (InterruptedException e) {
@@ -156,7 +156,7 @@ public class Main {
         }
         
         // Paso 3: Detener despachadores
-        System.out.println("3️⃣ Deteniendo despachadores...");
+        System.out.println("Deteniendo despachadores...");
         for (Despachador desp : despachadores) {
             desp.detener();
         }
@@ -172,7 +172,7 @@ public class Main {
         }
         
         // Paso 4: Detener monitor
-        System.out.println("4️⃣ Deteniendo monitor...");
+        System.out.println("Deteniendo monitor...");
         monitor.detener();
         execMonitor.shutdown();
         
@@ -186,10 +186,10 @@ public class Main {
         }
         
         // Mostrar resumen final
-        System.out.println("\n✅ Sistema detenido correctamente\n");
+        System.out.println("\nSistema detenido correctamente\n");
         monitor.mostrarResumenFinal();
         
-        System.out.println("\n📊 RESUMEN DE ACTIVIDAD POR COMPONENTE:");
+        System.out.println("\nRESUMEN DE ACTIVIDAD POR COMPONENTE:");
         System.out.println("\nOperadores:");
         for (OperadorLlamadas op : operadores) {
             System.out.println("  • " + op.getId() + ": " + op.getLlamadasAtendidas() + " llamadas procesadas");
@@ -197,7 +197,7 @@ public class Main {
         
         System.out.println("\nDespachadores:");
         for (Despachador desp : despachadores) {
-            System.out.println("  • " + desp.getId() + ": " + desp.getEmergenciasDespachas() + " emergencias despachadas");
+            System.out.println("  - " + desp.getId() + ": " + desp.getEmergenciasDespachas() + " emergencias despachadas");
         }
         
         System.out.println("\n" + "=".repeat(80));
